@@ -1,0 +1,118 @@
+@startuml
+abstract class com.company.SchimbaCombustibil {
++ Car c
++ String descrie()
++ void setCuloare(String)
++ void addPret(int)
++ void setCombustibil(String)
+}
+class com.company.SchimbaInBenzina {
++ void setCuloare(String)
++ void addPret(int)
++ void setCutie_viteze(String)
++ void setCombustibil(String)
++ String descrie()
+}
+class com.company.SchimbaInMotorina {
++ void setCuloare(String)
++ void addPret(int)
++ void setCutie_viteze(String)
++ void setCombustibil(String)
++ String descrie()
+}
+abstract class com.company.SchimbaCutieViteze {
++ Car c
++ String descrie()
++ void setCuloare(String)
++ void addPret(int)
++ void setCutie_viteze(String)
++ void setCombustibil(String)
+}
+class com.company.SchimbaInAutomata {
++ void setCuloare(String)
++ void addPret(int)
++ void setCutie_viteze(String)
++ String descrie()
+}
+class com.company.SchimbaInManuala {
++ void setCuloare(String)
++ void addPret(int)
++ void setCutie_viteze(String)
++ String descrie()
+}
+abstract class com.company.SchimbaCuloare {
++ Car c
++ String descrie()
++ void setCuloare(String)
++ void addPret(int)
++ void setCombustibil(String)
+}
+class com.company.SchimbaInGalben {
++ void setCuloare(String)
++ void addPret(int)
++ void setCutie_viteze(String)
++ String descrie()
+}
+class com.company.SchimbaInAlbastru {
++ String culoare
++ int pret
++ void setCuloare(String)
++ void addPret(int)
++ void setCutie_viteze(String)
++ String descrie()
+}
+class com.company.SchimbaInGri {
++ void setCuloare(String)
++ void addPret(int)
++ void setCutie_viteze(String)
++ String descrie()
+}
+interface com.company.Car {
+~ String descrie()
+~ void setCuloare(String)
+~ void addPret(int)
+~ void setCutie_viteze(String)
+~ void setCombustibil(String)
+}
+class com.company.Audi_A6_allroad_quattro {
++ String model
++ String combustibil
++ int pret
++ String culoare
++ String cutie_viteze
++ String descrie()
++ void setCuloare(String)
++ void addPret(int)
++ void setCutie_viteze(String)
++ void setCombustibil(String)
+}
+class com.company.Audi_A7_Sportback {
++ String model
++ String combustibil
++ int pret
++ String culoare
++ String cutie_viteze
++ String descrie()
++ void setCuloare(String)
++ void addPret(int)
++ void setCutie_viteze(String)
++ void setCombustibil(String)
+}
+class com.company.Main {
++ {static} void main(String[])
+}
+
+
+com.company.Car <|.. com.company.SchimbaCombustibil
+com.company.SchimbaCombustibil <|-- com.company.SchimbaInBenzina
+com.company.SchimbaCombustibil <|-- com.company.SchimbaInMotorina
+com.company.Car <|.. com.company.SchimbaCutieViteze
+com.company.SchimbaCutieViteze <|-- com.company.SchimbaInAutomata
+com.company.SchimbaCutieViteze <|-- com.company.SchimbaInManuala
+com.company.Car <|.. com.company.SchimbaCuloare
+com.company.SchimbaCuloare <|-- com.company.SchimbaInGalben
+com.company.SchimbaCuloare <|-- com.company.SchimbaInAlbastru
+com.company.SchimbaCuloare <|-- com.company.SchimbaInGri
+com.company.Car <|.. com.company.Audi_A6_allroad_quattro
+com.company.Car <|.. com.company.Audi_A7_Sportback
+@enduml
