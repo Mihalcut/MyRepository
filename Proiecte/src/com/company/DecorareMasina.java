@@ -6,15 +6,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-/**
- * 
- * @author Dragomir Alexandru-Constantin
- * @author Mihalcut Daniel-Paul
- * 
- *
- */
+
 interface Car{
-	
     String descrie();
     void setCuloare(String culoare1);
     void addPret(int pret);
@@ -88,7 +81,6 @@ class Audi_A7_Sportback implements Car{
     }
 }
 public class DecorareMasina {
-	
         static Car decorare() {
             Car c;  // Obiectul asupra caruia aplicam decoratorii
             System.out.println("Alegeti dintre unul din modelele:Audi A6 allroad quattro, Audi A7 Sportback ");
