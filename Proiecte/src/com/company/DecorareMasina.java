@@ -6,6 +6,11 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+/**
+ * 
+ * @author Mihalcut, Dragomir
+ *
+ */
 
 interface Car{
     String descrie();
@@ -15,6 +20,12 @@ interface Car{
     void setCombustibil(String combustibil);
 }
 
+/**
+ * 
+ * @deprecated
+ *definirea modelului de masina A6 Allroad Quattro
+ *
+ */
 class Audi_A6_allroad_quattro implements Car{
     public String model="Audi A6 allroad quattro";
     public String combustibil="motorina";
@@ -48,6 +59,12 @@ class Audi_A6_allroad_quattro implements Car{
     }
 }
 
+/**
+ * 
+ * @deprecated
+ *definirea modelului de masina A7 Sportback
+ *
+ */
 class Audi_A7_Sportback implements Car{
     public String model="Audi A7 Sportback";
     public String combustibil="benzina";
@@ -80,6 +97,19 @@ class Audi_A7_Sportback implements Car{
         this.combustibil=combustibil;
     }
 }
+
+/**
+ * 
+ * @deprecated
+ *Decorarea modelului ales
+ *
+ *@throws
+ *Inexistenta unei optiuni introduse
+ *
+ *@return
+ *Obiectul decorat
+ *
+ */
 public class DecorareMasina {
         static Car decorare() {
             Car c;  // Obiectul asupra caruia aplicam decoratorii
