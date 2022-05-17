@@ -1,6 +1,13 @@
 package com.company;
 
-//Implementarea decoratorilor
+/**
+*
+* @author Mihalcut, Dragomir
+* 
+* @deprecated
+* Implementarea decoratorilor
+*
+*/
 public abstract class AdaugaCuloare implements Car {
     public Car c;
     AdaugaCuloare(Car cu){

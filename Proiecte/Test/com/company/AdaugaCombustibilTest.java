@@ -8,6 +8,14 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+/**
+*
+* @author Mihalcut, Dragomir
+* 
+* @deprecated
+* Testarea decoratorilor
+*
+*/
 public class AdaugaCombustibilTest {
 	Car c;
 	AdaugaMotorina m=new AdaugaMotorina(c);
